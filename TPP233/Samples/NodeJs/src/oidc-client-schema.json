@@ -1,0 +1,61 @@
+{
+  "title": "Schema for OidcClient",
+  "type": "object",
+  "properties": {
+    "issuer": { "type": "string" },
+    "token_endpoint_auth_method":  {
+      "type": "string",
+      "enum": [
+        "client_secret_basic",
+        "private_key_jwt",
+        "tls_client_auth"
+      ]
+    },
+
+    "token_endpoint_auth_signing_alg": {
+      "type": "string",
+      "enum": [ "none", "HS256", "PS256", "RS256", "ES256" ]
+    },
+
+    "backchannel_authentication_request_signing_alg": {
+      "type": "string",
+      "enum": [ "none", "HS256", "PS256", "RS256", "ES256" ]
+    },
+
+    "request_object_signing_alg": {
+      "type": "string",
+      "enum": [ "none", "HS256", "PS256", "RS256", "ES256" ]
+    },
+
+    "certs": {
+      "type": "object",
+      "properties": {
+        "ca": { "type": "string" },
+        "cert": { "type": "string" },
+        "key": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+
+    "client_id": { "type": "string" },
+    "client_secret": { "type": "string" },
+
+    "signingKeyFileName": { "type": "string" },
+    "signingKeyKid": { "type": "string" },
+
+    "logLevels": {
+      "type": "object",
+      "properties": {
+        "oidcClient": {
+          "type": "string",
+          "enum": [ "silent", "info", "debug", "error" ]
+        },
+        "http": { "type": "string" },
+        "jwt": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["issuer"],
+  "additionalProperties": false
+}

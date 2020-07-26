@@ -1,0 +1,18 @@
+{
+  "logLevels": {
+    "oidcClient": "silent",
+    "http": "info"
+  },
+  "issuer": "https://o3in-auth1-ui.o3bank.co.uk/.well-known/openid-configuration",
+  "certs": {
+    "ca": "C:\\usr\\freddi\\projects\\ozone\\tech\\repos\\monorepo\\crypto\\certs\\obie\\sandbox\\ob-sandbox-issuing-chain.pem",
+    "cert": "C:\\usr\\freddi\\projects\\ozone\\tech\\repos\\monorepo\\crypto\\certs\\tpp\\tpp2019-HQuZPIt3ipkh33Uxytox1E\\transport-HQuZPIt3ipkh33Uxytox1E.pem",
+    "key": "C:\\usr\\freddi\\projects\\ozone\\tech\\repos\\monorepo\\crypto\\certs\\tpp\\tpp2019-HQuZPIt3ipkh33Uxytox1E\\transport-HQuZPIt3ipkh33Uxytox1E.key"
+  },
+  "token_endpoint_auth_method": "private_key_jwt",
+  "token_endpoint_auth_signing_alg": "PS256",
+  "client_id": "acabea76-7e63-4a38-981f-916b34833f47",
+  "client_secret": "247f7bb8-8cdc-4462-8bc1-89bb91b99788",
+  "signingKeyKid": "dISF5OP0NEnErg-TfWVc4eFjiZg",
+  "signingKeyFileName": "C:\\usr\\freddi\\projects\\ozone\\tech\\repos\\monorepo\\crypto\\certs\\tpp\\tpp2019-HQuZPIt3ipkh33Uxytox1E\\signing-HQuZPIt3ipkh33Uxytox1E.key"
+}
